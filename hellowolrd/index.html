@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World!</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link href="./artDialog-5.0.4/skins/twitter.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./ink-2.2.0/css/ink.css">
+  </head>
+  <body>
+    <h1>我的比特币一览表</h1>
+    <a href="./price.html">行情</a>
+    <iframe id="okcoinFrame" class="none"></iframe>
+    <iframe id="btceFrame" class="none"></iframe>
+    <iframe id="bterFrame" class="none"></iframe>
+    <iframe id="bterFrameMe" class="none"></iframe>
+    <iframe id="bterFrameHistory" class="none"></iframe>
+    <iframe id="bterFrameMyFund" class="none"></iframe>
+    <iframe id="coinmarketcap" class="none"></iframe>
+    <script type="text/javascript" src="./js/sea.js"></script>
+    <script type="text/javascript" src="./artDialog-5.0.4/artDialog.min.js"></script>
+    <script type="text/javascript" src="./artDialog-5.0.4/artDialog.plugins.min.js"></script>
+<script type="text/javascript">
+  	// seajs 的简单配置
+  seajs.config({
+    base: "./sea-modules/",
+    alias: {
+      "jquery": "jquery/jquery/1.10.1/jquery.js"
+    }
+  });
+
+  seajs.use("main");
+</script>
+    </body>
+</html>

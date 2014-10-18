@@ -1,0 +1,11 @@
+{
+  "name":"微信红包外挂",
+  "description": "一有红包就通知你",
+  "version":1.0,
+  "main": "index.html",
+  "window": {
+    "toolbar": true,
+    "width": 1000,
+    "height": 650
+  }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>微信红包外挂</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+    <style type="text/css">
+    html{
+      overflow: hidden;
+    }
+    #wxIframe{
+      height: 650px;
+      width: 102%;
+      margin-left: -10px;
+    }
+    #btnLogin{
+      margin-bottom: 20px;
+    }
+
+    button.description{
+      margin:10px;   
+      position: absolute;
+      left: 38%;
+      top: 480px;
+
+    }
+    </style>
+  </head>
+  <body>
+   <!-- Button trigger modal -->
+   <div class="description">
+      <button id="description" class="btn btn-primary btn-lg description" data-toggle="modal" data-target="#myModal">
+      微信红包外挂使用说明
+    </button>   
+   </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">微信红包外挂使用说明</h4>
+      </div>
+      <div class="modal-body">
+        <h4>外挂用途</h4>
+        <p>微信最新出了发红包功能，经常有土豪在群里发红包，但你刚打开却发现已经被瓜分了！为了第一时间掌握土豪的发红包动态。本屌丝做了这个微信红包外挂，第一时间将抢红包的消息推送给你，让你不拉下一个红包！</p>
+        <h4>使用方法：</h4>
+        <ol>
+        <li>使用微信扫一扫登录网页版微信</li>
+        <li>然后就是等啊，等啊</li>
+        <li>当有土豪在群里发红包的时候，你马上会收到”文件传输助手”给你发来一条红包消息 <img src="./asset/description.jpg"></li>
+        <li>点击你就会看到红包消息，然后你懂的！！红包 get！</li>
+        </ol>
+        <h4>注意事项：</h4>
+        <p>等待过程中，不能关闭外挂</p>
+        <h4>意见反馈：</h4>
+        <p>泰迪 teddywuinfo@gmail.com</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">好的我知道了</button>
+      
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+  <iframe id="wxIframe" src="http://w.qq.com/"></iframe>
+<script type="text/javascript" src="./js/sea.js"></script>
+<script type="text/javascript">
+  	// seajs 的简单配置
+  seajs.config({
+    base: "./sea-modules/",
+    alias: {
+      "jquery": "jquery/jquery/1.10.1/jquery.js"
+    }
+  });
+
+  seajs.use("main");
+</script>
+</body>
+</html>
